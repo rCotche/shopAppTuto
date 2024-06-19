@@ -1,0 +1,18 @@
+pubspec yaml
+asset pour les images
+
+typo :
+- utiliser google font package (peut causer un léger ralentissement, pour la performance)
+- ou dans pubspec yaml install "manuellement" la font,  fonts pour la typo
+
+////////// Provider
+Provider is a read only widget
+
+////////// ChangeNotifierProvider
+Provider.of<Counter>(context).cart //à definir
+context.watch doit etre utilise a chaque fois que le widget a besoin d'une valeur
+utilise le widget consumer au moment de display la data
+Consumer<Counter>(
+        builder: (context, counter, child) {
+          return widget(counter.counter) counter(objet).counter(get)//à definir
+PAs oublier de supprmer la ligne context.watch si elle existe
